@@ -3,8 +3,6 @@
 // Will Burson
 
 #include "DHT.h"
-#include <SoftwareSerial.h>
-#include <SparkFunESP8266WiFi.h>
 #include "config.h"
 #include "WifiConnector.h"
 #include "DataPusher.h"
@@ -51,7 +49,6 @@ void loop() {
 
 }
 
-
 // Sensor Helper functions
 int readSensor() {
 
@@ -95,8 +92,7 @@ void printSensorData() {
 }
 
 // Serial Helper functions
-// serialTrigger prints a message, then waits for something
-// to come in from the serial port.
+
 void serialTrigger(String message)
 {
   Serial.println();
